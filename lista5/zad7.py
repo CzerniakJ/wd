@@ -9,9 +9,9 @@ class Wi:
     def __next__(self):
         if self.index  == len(self.a):
             raise StopIteration
-        elif self.index % 2 == 0:
+        self.index += 1
+        if (self.index %2 == 0):
             return self.a[self.index]
-        self.index = self.index + 1
         
 
 
